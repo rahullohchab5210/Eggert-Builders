@@ -34,8 +34,9 @@ function Footer() {
                     <div className='flex flex-wrap items-center justify-center gap-6 md:gap-8'>
                         {FOOTER_LINKS_DATA.map((item, i) => (
                             <a key={i} href="#" data-aos="fade-up" data-aos-delay={i * 100} data-aos-offset="-200"
-                                className='font-jost font-medium text-xs leading-150 tracking-20 uppercase text-white/60'>
+                                className='font-jost font-medium text-xs leading-150 tracking-20 uppercase text-white/60 relative inline-block group hover:text-white'>
                                 {item}
+                                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full rounded" />
                             </a>
                         ))}
                     </div>

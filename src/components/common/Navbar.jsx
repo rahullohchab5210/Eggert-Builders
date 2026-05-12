@@ -41,8 +41,9 @@ function Navbar() {
                         {/* Desktop Nav Links */}
                         <div className='hidden lg:flex items-center gap-8'>
                             {NAVLINKS_DATA.map((item, i) => (
-                                <Link key={i} href={item.path} className='font-jost font-medium text-xs text-white leading-150 tracking-20 hover:text-white/60 transition-colors duration-200'>
+                                <Link key={i} href={item.path} className='font-jost font-medium text-xs text-white leading-150 tracking-20 hover:text-white/60 transition-colors duration-200 inline-block group relative'>
                                     {item.title}
+                                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white/60 transition-all duration-300 group-hover:w-full rounded" />
                                 </Link>
                             ))}
                         </div>
