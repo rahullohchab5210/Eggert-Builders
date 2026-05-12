@@ -11,15 +11,15 @@ function Address() {
     }, [])
 
     return (
-        <div className='bg-dark-secondary'>
+        <div className='bg-dark-secondary overflow-hidden lg:max-h-[721px]'>
             <div className='max-w-360 mx-auto'>
                 <div className='flex flex-col lg:flex-row'>
-                    <div className='py-16 lg:py-30 px-4 md:px-16'>
+                    <div className='py-16 lg:py-30 px-4 md:pl-16 pr-17.5 lg:max-h-[721px]'>
                         <span data-aos="fade-up" className='font-jost font-medium text-xs leading-150 tracking-20 uppercase text-white/40'>Get In Touch</span>
                         <h2 data-aos="fade-up" data-aos-delay="150" className='pt-4 font-cormorant font-normal sm:text-4xl text-3xl md:text-custom-6xl leading-120 tracking-normal text-white'>Contact us</h2>
                         <p data-aos="fade-up" data-aos-delay="250" className='lg:max-w-105.25 max-w-full pt-3 pb-8 font-jost font-normal sm:text-base text-sm leading-150 tracking-normal text-white/60'>Ready to get started or just have questions? Reach out — Scott will respond to you personally.</p>
                         <div data-aos="fade-up" data-aos-delay="350" className='w-full border border-white/12'></div>
-                        <div className='flex flex-col gap-6 pt-8'>
+                        <div className='flex flex-col gap-6 pt-8 '>
                             {ADDRESS_DATA.map((item, i) => (
                                 <div key={i} data-aos="fade-up" data-aos-delay={400 + i * 100}>
                                     <span className='font-jost font-medium text-xs leading-150 tracking-20 uppercase text-white/40'>{item.label}</span>

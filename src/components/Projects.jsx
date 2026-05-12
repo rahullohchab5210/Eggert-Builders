@@ -1,7 +1,8 @@
+
+
 "use client"
 import React, { useEffect } from 'react'
 import Button from './common/Button'
-import Image from 'next/image'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -25,58 +26,52 @@ function Projects() {
                         />
                     </div>
                 </div>
-                <div className='flex xl:flex-row flex-col items-center mt-12'>
-                    <div data-aos="fade-right" data-aos-delay="100" className="relative overflow-hidden group xl:max-w-167 max-w-full w-full  border-4 border-offwhite">
-                        <Image
-                            className="object-cover  xl:max-w-167 max-w-full w-full xl:h-167.75 sm:h-[550px] h-[400px] transition-transform duration-500 ease-in-out group-hover:scale-110"
+                <div className='mt-12 flex min-[680px]:flex-row flex-col'>
+
+                    {/* Left - Large Image */}
+                    <div data-aos="fade-right" data-aos-delay="100" className='overflow-hidden border-4 border-gray-light'>
+                        <img
                             src="/assets/images/webp/project-img-one.webp"
                             alt="image"
-                            width={668}
-                            height={671}
+                            className='w-full h-full max-w-167 max-h-167.75 transition-transform duration-500 ease-in-out hover:scale-110'
                         />
                     </div>
-                    <div className='flex flex-col items-center max-xl:w-full'>
-                        <div className='flex items-center max-xl:w-full'>
-                            <div data-aos="fade-down" data-aos-delay="200" className="relative overflow-hidden group xl:max-w-80.5 max-w-full w-full border-4 border-offwhite">
-                                <Image
-                                    className='object-cover xl:max-w-80.5 max-w-full xl:h-107.25 sm:h-[400px] h-[200px]  w-full xl:h-full transition-transform duration-500 ease-in-out group-hover:scale-110'
+
+                    <div className='flex flex-col'>
+                        <div className='flex items-center'>
+                            <div data-aos="fade-down" data-aos-delay="200" className='overflow-hidden border-4 border-gray-light'>
+                                <img
                                     src="/assets/images/webp/project-img-two.webp"
                                     alt="image"
-                                    width={322}
-                                    height={429}
+                                    className='w-full h-full max-w-80.5 max-h-107.25 transition-transform duration-500 ease-in-out hover:scale-110'
                                 />
                             </div>
-                            <div data-aos="fade-down" data-aos-delay="350" className="relative overflow-hidden group xl:max-w-80.5 max-w-full w-full border-4 border-offwhite">
-                                <Image
-                                    className='object-cover xl:max-w-80.5 max-w-full w-full xl:h-107.25 sm:h-[400px] h-[20px] xl:h-full transition-transform duration-500 ease-in-out group-hover:scale-110'
+                            <div data-aos="fade-down" data-aos-delay="350" className='overflow-hidden border-4 border-gray-light'>
+                                <img
                                     src="/assets/images/webp/project-img-three.webp"
                                     alt="image"
-                                    width={322}
-                                    height={429}
+                                    className='w-full h-full max-w-80.5 max-h-107.25 transition-transform duration-500 ease-in-out hover:scale-110'
                                 />
                             </div>
                         </div>
-                        <div className='flex items-center max-xl:w-full'>
-                            <div data-aos="fade-up" data-aos-delay="500" className="relative overflow-hidden group xl:max-w-80.5 max-w-full w-full border-4 border-offwhite">
-                                <Image
-                                    className='object-cover xl:max-w-80.5 max-w-full max-h-60.5 w-full transition-transform duration-500 ease-in-out group-hover:scale-110'
+                        <div className='flex items-center'>
+                            <div data-aos="fade-up" data-aos-delay="500" className='overflow-hidden border-4 border-gray-light'>
+                                <img
                                     src="/assets/images/webp/project-img-four.webp"
                                     alt="image"
-                                    width={322}
-                                    height={242}
+                                    className='w-full h-full max-w-80.5 max-h-60.5 transition-transform duration-500 ease-in-out hover:scale-110'
                                 />
                             </div>
-                            <div data-aos="fade-up" data-aos-delay="650" className="relative overflow-hidden group xl:max-w-80.5 max-w-full w-full border-4 border-offwhite">
-                                <Image
-                                    className='object-cover xl:max-w-80.5 max-w-full w-full max-h-60.5 transition-transform duration-500 ease-in-out group-hover:scale-110'
+                            <div data-aos="fade-up" data-aos-delay="650" className='overflow-hidden border-4 border-gray-light'>
+                                <img
                                     src="/assets/images/webp/project-img-five.webp"
                                     alt="image"
-                                    width={322}
-                                    height={242}
+                                    className='w-full h-full max-w-80.5 max-h-60.5 transition-transform duration-500 ease-in-out hover:scale-110'
                                 />
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -85,11 +80,3 @@ function Projects() {
 
 export default Projects
 
-
-
-
-
-
-
-
- 

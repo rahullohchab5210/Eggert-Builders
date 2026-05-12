@@ -13,7 +13,7 @@ function Carpanters() {
     }, [])
 
     return (
-        <div className='bg-offwhite border border-gray-light xl:pr-16'>
+        <div className='bg-offwhite border border-gray-light xl:pr-16 overflow-hidden'>
             <div className='max-w-360 mx-auto'>
                 <div className='flex xl:flex-row flex-col xl:items-center xl:gap-16'>
                     <Image
