@@ -23,7 +23,6 @@ export const NAVLINKS_DATA = [
     },
 ];
 
-
 export const STATUS_DATA = [
     {
         title: "Years in Business",
@@ -43,7 +42,6 @@ export const STATUS_DATA = [
     },
 ];
 
-
 export const CARPANTERS_DATA = [
     "Family-owned and operated since the 1990s",
     "Licensed & insured general contractor",
@@ -52,8 +50,6 @@ export const CARPANTERS_DATA = [
     "Lot selection assistance included",
     "Serving Saint John, Dyer, Schererville & beyond"
 ];
-
-
 
 export const SERVICES_DATA = [
     {
@@ -95,8 +91,6 @@ export const HOW_WORKS_DATA = [
         description: "We don't close until you're completely satisfied. Handing over the keys — and seeing your reaction — is our favorite part of the job."
     },
 ];
-
-
 
 export const ADDRESS_DATA = [
     {

@@ -55,7 +55,7 @@ function Navbar() {
 
                         {/* Hamburger Button */}
                         <button
-                            className='lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 z-[1000] cursor-pointer'
+                            className='lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 z-[999] cursor-pointer'
                             onClick={() => setMenuOpen(!menuOpen)}
                             aria-label="Toggle menu"
                         >
