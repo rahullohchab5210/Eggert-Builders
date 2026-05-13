@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 function Chicagolands() {
 
     useEffect(() => {
-        AOS.init({ duration: 600 })
+        AOS.init({ duration: 600, once: true })
     }, [])
 
     return (

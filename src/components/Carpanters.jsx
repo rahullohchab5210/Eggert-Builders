@@ -9,11 +9,18 @@ import 'aos/dist/aos.css'
 function Carpanters() {
 
     useEffect(() => {
-        AOS.init({ duration: 700 })
+        AOS.init({ duration: 700, once: true })
     }, [])
 
+    const handleWorkWithUs = () => {
+        const formSection = document.getElementById('contact-form');
+        if (formSection) {
+            formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
-        <div className='bg-offwhite border border-gray-light xl:pr-16 overflow-hidden'>
+        <div id="about" className='bg-offwhite border border-gray-light xl:pr-16 overflow-hidden'>
             <div className='max-w-360 mx-auto'>
                 <div className='flex xl:flex-row flex-col xl:items-center xl:gap-16'>
 
@@ -21,7 +28,7 @@ function Carpanters() {
                     <Image
                         data-aos="fade-right"
                         data-aos-duration="900"
-                        className='w-full h-full xl:max-w-177 max-w-full lg:max-h-238.25 sm:max-h-[500px] max-h-[350px]'
+                        className='w-full h-full xl:max-w-177 max-w-full lg:max-h-238.25 sm:max-h-[500px] max-h-[350px] object-cover'
                         src="/assets/images/webp/carpanters-img.webp"
                         alt="logo-image"
                         width={708}
@@ -49,7 +56,7 @@ function Carpanters() {
 
                         {/* Button */}
                         <div data-aos="fade-up" data-aos-delay="800">
-                            <Button text={"work with us"} variant='dark' />
+                            <Button text={"work with us"} variant='dark' onClick={handleWorkWithUs} />
                         </div>
                     </div>
 
@@ -60,3 +67,16 @@ function Carpanters() {
 }
 
 export default Carpanters
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 function Experience() {
 
     useEffect(() => {
-        AOS.init({ duration: 700 })
+        AOS.init({ duration: 700, once: true })
     }, [])
 
     return (

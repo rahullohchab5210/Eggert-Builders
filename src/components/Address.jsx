@@ -7,11 +7,11 @@ import 'aos/dist/aos.css'
 function Address() {
 
     useEffect(() => {
-        AOS.init({ duration: 700 })
+        AOS.init({ duration: 700, once: true })
     }, [])
 
     return (
-        <div className='bg-dark-secondary overflow-hidden lg:max-h-[721px]'>
+        <div id="contact-us" className='bg-dark-secondary overflow-hidden lg:max-h-[721px]'>
             <div className='max-w-360 mx-auto'>
                 <div className='flex flex-col lg:flex-row'>
 
@@ -46,7 +46,7 @@ function Address() {
                         />
 
                         {/* Address Items List */}
-                        <div className='flex flex-col gap-6 pt-8'>
+                        <div className='flex flex-col space-y-6 pt-8'>
                             {ADDRESS_DATA.map((item, i) => (
                                 <div key={i}
                                     data-aos="fade-up"
@@ -70,7 +70,7 @@ function Address() {
                         className='w-full lg:h-180.25 sm:h-125 h-100 lg:max-w-221.25'
                     >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.840938795428!2d-87.50763272411838!3d41.443030871292855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811e2e49f80d20b%3A0xfc18d18232555ea6!2s9695%20Julia%20Dr%2C%20St%20John%2C%20IN%2046373%2C%20USA!5e1!3m2!1sen!2sin!4v1778563949947!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.8244397190256!2d-87.50763272411838!3d41.443030871292855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811e2e49f80d20b%3A0xfc18d18232555ea6!2s9695%20Julia%20Dr%2C%20St%20John%2C%20IN%2046373%2C%20USA!5e0!3m2!1sen!2sin!4v1778660923060!5m2!1sen!2sin"
                             width="100%"
                             height="100%"
                             allowFullScreen=""

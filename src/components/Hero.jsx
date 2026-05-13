@@ -1,7 +1,17 @@
+"use client"
 import React from 'react'
 import Button from './common/Button';
 
 function Hero() {
+
+    const handleViewWork = (e) => {
+        e.preventDefault();
+        const projectsSection = document.getElementById('projects');
+        if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
         <div className="bg-[url('/assets/images/webp/hero-bg.webp')] bg-cover bg-center bg-no-repeat h-full md:pb-[158px] pb-[70px] md:pt-[180px] pt-[130px]">
             <div className='max-w-328 mx-auto max-[1350px]:px-4'>
@@ -20,7 +30,9 @@ function Hero() {
                     {/* Buttons */}
                     <div className='flex min-[500px]:flex-row flex-col min-[500px]:items-center max-[500px]:float-left gap-8 animate-delay-3'>
                         <Button text={"Start a Conversation"} variant='secondary' />
-                        <Button text={"View our work"} variant='text' />
+                        <button onClick={handleViewWork}>
+                            <Button text={"View our work"} variant='text' />
+                        </button>
                     </div>
 
                 </div>
@@ -31,4 +43,19 @@ function Hero() {
 
 export default Hero;
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

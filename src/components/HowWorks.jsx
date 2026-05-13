@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 function HowWorks() {
 
     useEffect(() => {
-        AOS.init({ duration: 700 })
+        AOS.init({ duration: 700, once: true })
     }, [])
 
     return (
@@ -26,15 +26,15 @@ function HowWorks() {
                 {/* Steps */}
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-15'>
                     {HOW_WORKS_DATA.map((item, i) => (
-                        <div
-                            key={i}
-                            data-aos="zoom-in"
-                            data-aos-delay={i * 150}
-                            className='p-8 border border-white/12 bg-black-soft'
-                        >
-                            <span className='font-cormorant font-normal text-custom-6xl leading-120 tracking-normal text-white/12'>{item.count}</span>
-                            <h3 className='py-3 font-cormorant font-normal text-custom-4xl leading-120 tracking-normal text-white'>{item.title}</h3>
-                            <p className='font-jost font-normal text-base leading-150 tracking-normal text-white/60'>{item.description}</p>
+                        <div key={i} data-aos="zoom-in" data-aos-delay={i * 150}>
+                            <div
+                                className={`p-8 border border-white/12 bg-black-soft hover:bg-black-soft/50 transition-all duration-300 h-full
+  ${i !== 0 ? 'sm:border-l-0 lg:border-l-0' : ''}`}
+                            >
+                                <span className='font-cormorant font-normal text-custom-6xl leading-120 tracking-normal text-white/12'>{item.count}</span>
+                                <h3 className='py-3 font-cormorant font-normal text-custom-4xl leading-120 tracking-normal text-white'>{item.title}</h3>
+                                <p className='font-jost font-normal text-base leading-150 tracking-normal text-white/60'>{item.description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>

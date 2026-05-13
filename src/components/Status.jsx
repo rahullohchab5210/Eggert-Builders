@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 function Status() {
 
     useEffect(() => {
-        AOS.init({ duration: 600 })
+        AOS.init({ duration: 600, once: true })
     }, [])
 
     return (
