@@ -29,7 +29,10 @@ function HowWorks() {
                         <div key={i} data-aos="zoom-in" data-aos-delay={i * 150}>
                             <div
                                 className={`p-8 border border-white/12 bg-black-soft hover:bg-black-soft/50 transition-all duration-300 h-full
-  ${i !== 0 ? 'sm:border-l-0 lg:border-l-0' : ''}`}
+     ${i === 0 ? 'border-b-0 lg:border-b lg:border-l' : ''}
+  ${i === 1 ? 'border-b-0 sm:border-l-0 lg:border-b lg:border-l-0' : ''}
+  ${i === 2 ? 'sm:border-b border-b-0 lg:border-l-0' : ''}
+  ${i === 3 ? 'sm:border-l-0 lg:border-l-0' : ''}`}
                             >
                                 <span className='font-cormorant font-normal text-custom-6xl leading-120 tracking-normal text-white/12'>{item.count}</span>
                                 <h3 className='py-3 font-cormorant font-normal text-custom-4xl leading-120 tracking-normal text-white'>{item.title}</h3>
