@@ -33,7 +33,7 @@ function HowWorks() {
                             >
                                 <span className='font-cormorant font-normal text-custom-6xl leading-120 tracking-normal text-white/12'>{item.count}</span>
                                 <h3 className='py-3 font-cormorant font-normal text-custom-4xl leading-120 tracking-normal text-white'>{item.title}</h3>
-                                <p className='font-jost font-normal text-base leading-150 tracking-normal text-white/60'>{item.description}</p>
+                                <p className={`font-jost font-normal text-base leading-150 ${i === 3 ? 'tracking-[-0.01em]' : 'tracking-normal'} text-white/60`}>{item.description}</p>
                             </div>
                         </div>
                     ))}

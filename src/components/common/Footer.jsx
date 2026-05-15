@@ -37,7 +37,7 @@ function Footer() {
 
                     {/* Copyright Text */}
                     <p className='max-w-49.5 text-center lg:text-left font-jost font-normal text-sm md:text-base leading-150 tracking-normal text-white/60'>
-                        © 2025 Eggert Builders, Inc. All rights reserved.
+                        © {new Date().getFullYear()} Eggert Builders, Inc. All rights reserved.
                     </p>
 
                 </div>
